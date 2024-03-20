@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+
+.logo a img {}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 100px 0 100px;
+
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.about-me {
+    display: flex;
+    gap: 100px;
+    margin: 200px
+}
+
+.contact-me {
+    text-align: center;
+    margin: 200px
+}
+
+.about-me-text {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000;
+    width: 50%;
+}
+
+.about-me-image img {
+
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 10px;
+
+}
+
+.about-me-image img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.about-me-text {}
+
+.animation {
+    overflow: hidden;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#mode-button {
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 10px;
+    margin: 5px;
+}
+
+i {
+    font-size: 25px;
+}
+
+.animation-right {
+    animation-duration: 10s;
+    animation-name: slideinRight;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.lastname {
+    color: #ffa500;
+    border: none;
+}
+
+.fullname {
+    font-size: 50px;
+}
+
+.linkedin i {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.twitter i {
+    margin-right: 10px;
+}
+
+.linkedin i:hover {
+    color: #0e76a8;
+
+}
+
+.twitter i:hover {
+    color: #1da1f2;
+}
+
+.github i:hover {
+    color: #211f1f;
+}
+
+@keyframes slidein {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes slideinRight {
+    from {
+        transform: translate(50%, 0);
+
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .about-me-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-me-image img:hover {
+        transform: none;
+        transition: 0.5s;
+    }
+
+    .contact-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+}
