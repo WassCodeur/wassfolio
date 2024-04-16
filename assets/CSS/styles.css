@@ -130,6 +130,101 @@ i {
     color: #211f1f;
 }
 
+.article-cards {
+    display: flex;
+    text-align: center;
+
+    margin: 200px
+}
+
+.article-card {
+    margin: 20px;
+}
+
+/* .article-card img {
+    width: 80%;
+    border: 2px solid gray;
+    border-radius: 10px;
+    
+} */
+
+.article-card-text:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.article-card-text {
+    background: url("../images/article1.jpg") center no-repeat;
+    padding: 100px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px transparent;
+
+
+}
+
+.text {
+
+    margin-bottom: -100px;
+    margin-left: -100px;
+    margin-right: -100px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.newletters {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.newletters input[type=email] {
+    padding: 12px;
+    width: 20%;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.testmonial-cards {
+
+
+    text-align: center;
+    margin: 200px;
+
+    /* animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    font-weight: bolder;
+    font-size: 20px; */
+}
+
+.testmonial-card {
+    /* display: inline-block; */
+    text-align: center;
+
+}
+
+.testmonial-text {
+    text-align: center;
+}
+
+.message {}
+
+.testmonial-card-image img {
+    /* margin: 50px; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
 @keyframes slidein {
     from {
         transform: translate(0, 0);
@@ -187,6 +282,11 @@ i {
         width: 100%;
         text-align: center;
 
+    }
+
+    .article-cards {
+        display: block;
+        margin: 0px
     }
 
 }
