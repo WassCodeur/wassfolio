@@ -41,7 +41,7 @@ a {
 
 .contact-me {
     text-align: center;
-    margin: 200px
+    margin: 0px 200px 0px 200px;
 }
 
 .about-me-text {
@@ -54,8 +54,8 @@ a {
 
 .about-me-image img {
 
-    width: 100%;
-    height: 90%;
+    width: 85%;
+    height: 85%;
     border: 2px solid gray;
     border-radius: 10px;
 
@@ -133,8 +133,8 @@ i {
 .article-cards {
     display: flex;
     text-align: center;
-
-    margin: 200px
+    margin: 0px 200px 0px 200px;
+    gap: 10px;
 }
 
 .article-card {
@@ -192,21 +192,13 @@ i {
 }
 
 .testmonial-cards {
-
-
     text-align: center;
     margin: 200px;
+    border: none;
 
-    /* animation-duration: 10s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: linear;
-    font-weight: bolder;
-    font-size: 20px; */
 }
 
 .testmonial-card {
-    /* display: inline-block; */
     text-align: center;
 
 }
@@ -215,13 +207,38 @@ i {
     text-align: center;
 }
 
-.message {}
+.message {
+    display: inline-block;
+    width: 40%
+}
 
 .testmonial-card-image img {
-    /* margin: 50px; */
-    width: 200px;
-    height: 200px;
+    margin: 0px 200px 0px 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+}
+
+.testmonial-card-image img:hover {
+    border: #ffa500 3px dashed;
+    transform: scale(1.1);
+    transition: 0.4s;
+
+}
+
+.name,
+.title {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.see-more {
+    margin-top: 10px;
+    text-align: center;
+
 
 }
 
@@ -287,6 +304,16 @@ i {
     .article-cards {
         display: block;
         margin: 0px
+    }
+
+    .testmonial-cards {
+        margin: 0px;
+
+
+    }
+
+    .message {
+        width: 100%
     }
 
 }
