@@ -22,4 +22,10 @@ Here are some of the skills I've acquired:
 
 Feel free to reach out to me at [email](mailto:wachioubouraima56@gmail.com).
 
+## Contribution
+
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=WassCodeur&limit=5&theme=dark&combine_all_yearly_contributions=true)
+
+
 Thank you for visiting my portfolio!
